@@ -1,0 +1,95 @@
+html, body {
+    height:100%;
+    margin: 0px;
+    /* overflow: hidden; */
+    background-color: rgb(190, 191, 192);
+}
+.container {
+    height: 100%; 
+    padding: 0%;
+    margin: 0%;
+}
+div.page_title {
+    height: 100px;
+    background-color: rgb(223, 165, 39);
+    border-radius: 5px;
+    position: relative;
+}
+p.site_name {
+    color: rgb(40, 40, 40);
+    font-size: 40px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 20px;
+}
+div.login_comp {
+    position: relative;
+    margin: 20px 10px;
+    width: 280px;
+      height: 90%;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+p.login {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(40, 40, 40);
+    font-weight: 900;
+    margin: 20px;
+}
+.text_type {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(40, 40, 40);
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 180px;
+}	
+.login_inputs {
+    font-family: Verdana;
+    font-size: 13px;
+    width: 190px;
+    background-color: inherit;
+    border: 0px;
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+.img_login {
+    width:20px;
+    height:20px;
+    vertical-align: middle;
+    opacity: 0.5;
+}
+input.login_btn {
+    margin: 20px 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 253, 253);
+    background-color:rgb(7, 165, 204);
+    width: 248px;
+    border-radius: 20px;
+    border: none;
+}	
+input.login_btn:hover {
+    background-color:rgb(2, 80, 110);
+}
+.footer {
+    position: absolute;
+    bottom: 10px;
+    width: 260px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(231, 81, 106);
+    border-radius: 5px;
+    padding: 10px;
+}
+@media (max-height: 600px) {
+    div.login_comp {
+        height: 600px;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HomeNode</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../css/index.css">
+	</head>
+	<body>
+	<div align="center" class="container">
+		<div align="center" class="login_comp">
+			<div class="page_title">
+				<p class="site_name">HomeNode</p>
+			</div>
+			<p align="center" class="login">Login</p>
+			<form action="#" method="POST" onsubmit="userLogin(); return false">
+				<label for="usr" class="text_type">Username</label></br>
+				<img src="../img/user.png" class="img_login"><span>
+					<input id="usr" class="login_inputs" type="text" name="usr" placeholder="Type your Username" required/>
+				</span></br>
+				<hr width="230px" style="margin: 5px 5px;">
+				<label for="psw" class="text_type">Password</label></br>
+				<img src="../img/lock.png" class="img_login"><span>
+					<input id="psw" class="login_inputs" type="password" name="psw" placeholder="Type Your Password" required/>
+				</span></br>
+				<hr width="230px" style="margin: 5px 5px;">
+				<div style="width: fit-content; margin-left: -125px;">
+					<input type="checkbox" id="remember_me">
+					<span style="font-family: Verdana; font-size: 12px;">Remember me</span>
+				</div>
+				<input class="login_btn" type="submit" value="Login"/></br>
+			</form>
+			<div align="center" class="footer">
+				&copy CoolBreez.Inc
+			</div>
+		</div>
+	</div>
+	<script src="../scripts/index.js"></script>
+	</body>
+</html>

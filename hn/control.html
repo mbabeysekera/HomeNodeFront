@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Node Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/controller.css">
+</head>
+
+<body>
+    <div align="center" class="container">
+        <div class="dashboard">
+            <div class="dash_banner">
+                HomeNode Dashboard
+            </div>
+            <div class="user_name">
+                <img src="../img/user.png" id="img_user">
+                <div id="user_ac_name">babey.lk@gmail</div>
+                <button id="logout_btn">Logout</button>
+            </div>
+            <hr id="hr_line">
+            <div id="home_img_div" class="home_jpg"></div>
+            <div align="left" class="temperature text_style_main">
+                <div id="temp_label">
+                    Average temperature
+                </div>
+                <div id="dynamic_temp">
+                    <span id="temp">50</span>&#8451
+                </div>
+            </div>
+            <div class="button_field text_style_main">
+                <div class="gpio">
+                    <img src="../img/homefront.png" id="button_img">
+                    Outdoor
+                    <label class="switch">
+                        <input type="checkbox" class="check_rem" id="homefront">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="gpio">
+                    <img src="../img/living.png" id="button_img"><br>
+                    Living Room
+                    <label class="switch">
+                        <input type="checkbox" class="check_rem" id="living">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="gpio">
+                    <img src="../img/kitchen.png" id="button_img"><br>
+                    Kitchen
+                    <label class="switch">
+                        <input type="checkbox" class="check_rem" id="kitchen">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="gpio">
+                    <img src="../img/garage.png" id="button_img"><br>
+                    Garage
+                    <label class="switch">
+                        <input type="checkbox" class="check_rem" id="garage">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="gpio">
+                    <img src="../img/bed.png" id="button_img"><br>
+                    Bed Room
+                    <label class="switch">
+                        <input type="checkbox" class="check_rem" id="bed">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="gpio">
+                    <img src="../img/bath.png" id="button_img"><br>
+                    Bathroom
+                    <label class="switch">
+                        <input type="checkbox" class="check_rem" id="bath">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+            <div align="center" class="footer">
+                &copy CoolBreez.Inc
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/controller.js"></script>
+</body>
+
+</html>

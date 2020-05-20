@@ -1,0 +1,193 @@
+html, body {
+    margin: 0px;
+    background-color: rgb(190, 191, 192);
+    height: 100%;
+}
+div.container {
+    position: relative;
+    height: 650px;
+    padding: 0px;
+    margin: 0px;
+}
+div.dashboard {
+    position: relative;
+    width: 280px;
+    height: 90%;
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px 10px;
+    padding: 10px;
+}
+.dash_banner {
+    position: relative;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    background-color: rgb(223, 165, 39);
+    border-radius: 5px 5px 0px 0px;
+}
+div.user_name {
+    position: relative;
+    padding: 5px 0px;
+    width: 280px;
+    height: 30px;
+}
+#img_user {
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+    vertical-align: middle;
+    border-radius: 15px;
+    float: left;
+}
+#user_ac_name {
+    position: relative;
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(83, 83, 83);
+    margin: 0px 5px;
+    padding: 4px 5px;
+    border: 2px solid rgb(223, 165, 39);
+    border-radius: 20px;
+    float: left;
+}
+#logout_btn {
+    position: relative;
+    width: fit-content;
+    height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+    border: 0px;
+    font-weight: bold;
+    color: rgb(255, 253, 253);
+    background-color:rgb(7, 165, 204);
+    margin: 0px;
+    outline: none;
+    float: left;
+}
+#logout_btn:hover {
+    background-color:rgb(2, 80, 110);
+}
+#hr_line {
+    width: 266px;
+    clear: left; 
+    border: 7px solid rgb(223, 165, 39); 
+    border-radius: 0px 0px 5px 5px;
+    margin:  0px 0px 5px 0px;
+}
+.home_jpg {
+    position: relative;
+    width: 280px;
+    height: 150px;
+    background-repeat: repeat;
+    border-radius: 5px 5px 0px 0px;
+    background: linear-gradient(to bottom, transparent, white), url("../img/home.jpg") center center no-repeat;
+    background-size: 100%;
+}
+.temperature {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    margin: 5px 0px;
+    font-weight: bold;
+    color: rgb(83, 83, 83);
+}
+#temp_label {
+    position: relative; 
+    margin: 2px 5px;
+    float: left;
+}
+#dynamic_temp {
+    position: absolute; 
+    float: left; 
+    right: 10px; 
+    text-align: right; 
+    width: 100px;
+}
+div.button_field {
+    clear: both;
+    width: 280px;
+    height: 270px;
+    margin: 0px;
+    user-select: none;
+    /* margin: 10px 0px; */
+}
+div.gpio {
+    width: 83px;
+    height: 120px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(83, 83, 83);
+    box-shadow: inset 0 0 10px rgb(7, 165, 204, .5);
+    border-radius: 10px;
+    float: left;
+}
+div.gpio:hover {
+    background-color: rgb(7, 165, 204, .2);
+}
+#button_img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0px;
+    opacity: 0.7;
+}
+.text_style_main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.check_rem {
+    display: none;
+} 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+.slider {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: gray;
+    border-radius: 20px;
+    transition: .2s;
+}
+.slider::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    bottom: 0px;
+    left: 0px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 3px;
+    transition: .2s;
+}
+input:checked + .slider {
+    background-color: rgb(7, 165, 204, .5);
+}
+input:checked + .slider::before {
+    transform: translateX(14px);
+}
+.footer {
+    position: absolute;
+    bottom: 10px;
+    width: 270px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(231, 81, 106);
+    border-radius: 5px;
+    padding: 5px;
+}
