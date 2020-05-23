@@ -8,6 +8,7 @@ div.container {
     height: 650px;
     padding: 0px;
     margin: 0px;
+    display: none;
 }
 div.dashboard {
     position: relative;
@@ -45,6 +46,7 @@ div.user_name {
 #user_ac_name {
     position: relative;
     width: 150px;
+    height: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -69,6 +71,7 @@ div.user_name {
     margin: 0px;
     outline: none;
     float: left;
+    cursor: pointer;
 }
 #logout_btn:hover {
     background-color:rgb(2, 80, 110);

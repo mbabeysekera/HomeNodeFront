@@ -6,7 +6,7 @@ function userLogin() {
     http.open("POST", url, true);
     http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     http.onload = function() {
-        if(this.status == "200") {
+        if(this.status == "201") {
             validateUserLogin(this.responseText);
         }
     }
@@ -23,13 +23,8 @@ function validateUserLogin(response) {
 }
 
 function loadDashbord(userData) {
-    // http = new XMLHttpRequest();
-    // var url = "http://localhost/homenode/v1/hn/control.html";
-    // http.open("GET", url, true);
-    // http.setRequestHeader("Content-Type", "application/html");
-    // http.onload = function() {
-        
-    // }
-    // http.send();
+    sessionStorage.setItem("hn_token", userData["user_data"]["access_token"]);
+    sessionStorage.setItem("hn_uname", userData["user_data"]["username"]);
+    sessionStorage.setItem("hn_uid", userData["user_data"]["user_id"]);
     window.location.href = "http://localhost/homenode/v1/hn/control.html";
 }
